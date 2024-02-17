@@ -1,12 +1,27 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE HTML
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title></title>
+    <title>Docx reader</title>
+
+    <style>
+        div {
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <input id="files" type="file" accept=".docx" />
-    <input type="button" id="btnPreview" value="Preview Word Document" onclick="PreviewWordDoc()" />
-    <div id="word-container" class=""></div>
+    <div>
+        <input id="files" type="file" accept=".docx" />
+        <input type="button" id="btnPreview" value="Preview Word Document" onclick="PreviewWordDoc()" />
+        <div id="word-container" class=""></div>
+    </div>
+
+    <div>
+        <a href="https://assets.lsdsoftware.com/read-aloud/pdf-viewer-2/web/readaloud.html">PDF viewer</a>
+    </div>
     <script type="text/javascript" src="https://unpkg.com/jszip/dist/jszip.min.js"></script>
     <script src="Scripts/docx-preview.js"></script>
     <script type="text/javascript">
@@ -29,4 +44,5 @@
         }
     </script>
 </body>
+
 </html>
